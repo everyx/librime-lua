@@ -2370,7 +2370,7 @@ namespace RimeApiReg {
   }
 
   string get_user_id(){
-    return Service::instance().deployer().user_id;
+    return string(rime_get_api()->get_user_id());
   }
 
   long get_time_ms() {
